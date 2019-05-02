@@ -3,6 +3,7 @@ node_js: stable
 branches:
   only:
   - master
+  - source
 cache:
   directories:
   - node_modules

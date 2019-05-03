@@ -2,7 +2,6 @@ language: node_js
 node_js: stable
 branches:
   only:
-  - master
   - source
 cache:
   directories:
@@ -11,7 +10,7 @@ before_install:
 - git config --global user.name "hunxiran"
 - git config --global user.email "hunxiran@outlook.com"
 - npm install -g hexo-cli
-- export HEXO_DEPLOYER_REPO=https://$REPO_TOKEN@github.com/hunxiran/hunxiran.github.io.git
+- export HEXO_DEPLOYER_REPO=https://${REPO_TOKEN}@github.com/hunxiran/hunxiran.github.io.git
 install:
 - npm i
 script:
